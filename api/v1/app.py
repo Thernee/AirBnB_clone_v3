@@ -2,7 +2,7 @@
 
 """Set up API with flask."""
 
-from flask import Flask
+from flask import Flask, make_response, jsonify
 from models import storage
 from api.v1.views import app_views
 from os import getenv
@@ -19,7 +19,7 @@ def tear_down(err):
 
 
 @app.errorhandler(404)
-def 404_handler(error):
+def handle_404(error):
     """Set custom 404 page."""
     return make_response(jsonify({"error": "Not found"}), 404)
 
