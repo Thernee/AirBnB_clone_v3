@@ -2,9 +2,12 @@
 """
 Contains class BaseModel
 """
-
-from datetime import datetime
 import models
+from uuid import uuid4
+from models import storage
+from datetime import datetime
+from models.engine.file_storage import FileStorage
+from datetime import datetime
 from os import getenv
 import sqlalchemy
 from sqlalchemy import Column, String, DateTime
