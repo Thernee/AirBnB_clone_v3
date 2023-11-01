@@ -1,11 +1,7 @@
 #!/usr/bin/python
-
-
 """ holds class Amenity"""
-
-
-from models.base_model import BaseModel
-from models.engine.file_storage import FileStorage
+import models
+from models.base_model import BaseModel, Base
 from os import getenv
 import sqlalchemy
 from sqlalchemy import Column, String
