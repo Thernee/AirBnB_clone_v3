@@ -1,5 +1,9 @@
 #!/usr/bin/python
+
+
 """ holds class Amenity"""
+
+
 from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 from os import getenv
